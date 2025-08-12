@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xperbot - Careers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --xperbot-dark-blue: #3D4B6D;
+            --xperbot-light-gray: #E5E5E5;
+            --xperbot-black: #000000;
+            --xperbot-white: #FFFFFF;
+            --xperbot-bright-blue: #6D9EFA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--xperbot-black);
+        }
+
+        .bg-xperbot-dark-blue { background-color: var(--xperbot-dark-blue); }
+        .bg-xperbot-light-gray { background-color: var(--xperbot-light-gray); }
+        .bg-xperbot-bright-blue { background-color: var(--xperbot-bright-blue); }
+        .text-xperbot-dark-blue { color: var(--xperbot-dark-blue); }
+        .text-xperbot-bright-blue { color: var(--xperbot-bright-blue); }
+        .border-xperbot-bright-blue { border-color: var(--xperbot-bright-blue); }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--xperbot-dark-blue) 0%, var(--xperbot-bright-blue) 100%);
+        }
+
+        .hero-pattern {
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(109, 158, 250, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(109, 158, 250, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(109, 158, 250, 0.1) 0%, transparent 50%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .section-spacing {
+            padding: 5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-spacing {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="Images/logo.png" alt="Xperbot Logo" class="h-10">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">About Us</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Careers</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-xperbot-dark-blue">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Careers Hero Section -->
+    <section class="relative bg-xperbot-dark-blue section-spacing text-white" style="padding-top: 8rem;">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl lg:text-7xl font-bold mb-4">Join Our Team</h1>
+            <p class="text-xl lg:text-2xl opacity-90">
+                Help us build the future of robotics and automation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Open Positions Section -->
+    <section class="bg-white section-spacing">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-xperbot-dark-blue mb-4">Open Positions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We are always looking for talented individuals to join our team. Explore our current openings below.
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <!-- Job Listing 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover mb-8">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-2">Robotics Engineer</h3>
+                            <p class="text-gray-600">Full-time | Zurich, Switzerland</p>
+                        </div>
+                        <a href="#" class="bg-xperbot-bright-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-300">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Job Listing 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover mb-8">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-2">Software Developer</h3>
+                            <p class="text-gray-600">Full-time | Remote</p>
+                        </div>
+                        <a href="#" class="bg-xperbot-bright-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-300">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Job Listing 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-2">Business Development Manager</h3>
+                            <p class="text-gray-600">Full-time | Bern, Switzerland</p>
+                        </div>
+                        <a href="#" class="bg-xperbot-bright-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-300">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="Images/logo.png" alt="Xperbot Logo" class="h-10">
+                    </div>
+                    <p class="text-gray-700 mb-6 max-w-md">
+                        Making advanced automation accessible, adaptable, and actionable for businesses worldwide.
+                        Swiss precision meets global innovation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/xperbot2025/?viewAsMember=true" target="_blank" class="w-10 h-10 bg-gray-200 hover:bg-xperbot-bright-blue rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-linkedin text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-xperbot-dark-blue mb-6">Services</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><a href="index.html#solutions" class="hover:text-xperbot-bright-blue transition duration-300">Strategic Consultation</a></li>
+                        <li><a href="index.html#solutions" class="hover:text-xperbot-bright-blue transition duration-300">Custom Implementation</a></li>
+                        <li><a href="index.html#solutions" class="hover:text-xperbot-bright-blue transition duration-300">Training & Support</a></li>
+                        <li><a href="index.html#solutions" class="hover:text-xperbot-bright-blue transition duration-300">Compliance Services</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-xperbot-dark-blue mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><a href="about.html" class="hover:text-xperbot-bright-blue transition duration-300">About Us</a></li>
+                        <li><a href="careers.html" class="hover:text-xperbot-bright-blue transition duration-300">Careers</a></li>
+                        <li><a href="index.html#contact" class="hover:text-xperbot-bright-blue transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 mt-12 pt-8 text-center">
+                <p class="text-gray-700">
+                    © 2024 Xperbot. All rights reserved. | Making Advanced Automation Accessible, Adaptable, and Actionable.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

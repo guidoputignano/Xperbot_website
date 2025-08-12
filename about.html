@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Xperbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --xperbot-dark-blue: #3D4B6D;
+            --xperbot-light-gray: #E5E5E5;
+            --xperbot-black: #000000;
+            --xperbot-white: #FFFFFF;
+            --xperbot-bright-blue: #6D9EFA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--xperbot-black);
+        }
+
+        .bg-xperbot-dark-blue { background-color: var(--xperbot-dark-blue); }
+        .bg-xperbot-light-gray { background-color: var(--xperbot-light-gray); }
+        .bg-xperbot-bright-blue { background-color: var(--xperbot-bright-blue); }
+        .text-xperbot-dark-blue { color: var(--xperbot-dark-blue); }
+        .text-xperbot-bright-blue { color: var(--xperbot-bright-blue); }
+        .border-xperbot-bright-blue { border-color: var(--xperbot-bright-blue); }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--xperbot-dark-blue) 0%, var(--xperbot-bright-blue) 100%);
+        }
+
+        .hero-pattern {
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(109, 158, 250, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(109, 158, 250, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(109, 158, 250, 0.1) 0%, transparent 50%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .section-spacing {
+            padding: 5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-spacing {
+                padding: 3rem 0;
+            }
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .floating-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="Images/logo.png" alt="Xperbot Logo" class="h-10">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">About Us</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Careers</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-xperbot-dark-blue">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Us Hero Section -->
+        <section class="relative bg-xperbot-light-gray section-spacing" style="padding-top: 8rem;">
+            <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('Images/first_image.jpg'); z-index: -2;"></div>
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50" style="z-index: -1;"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight text-white">
+                    About <span class="underline">Xperbot</span>
+                </h1>
+                <p class="text-xl mb-8 leading-relaxed opacity-90 text-white max-w-3xl mx-auto">
+                    Pioneering the future of robotics implementation with Swiss precision and global expertise.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="bg-white section-spacing">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold text-xperbot-dark-blue mb-6">Our Story</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Founded in Switzerland, Xperbot emerged from a vision to bridge the critical gap between cutting-edge robotics innovation and practical, real-world implementation. We recognized that while robotic technology was advancing rapidly, many businesses struggled to integrate these solutions effectively due to complexities in regulatory compliance, localization, and specialized workforce training.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Our journey began with a commitment to simplify this process, offering comprehensive, end-to-end solutions that empower businesses to harness the full potential of automation. From our humble beginnings, we have grown into a trusted partner for companies worldwide, driven by our passion for innovation and our unwavering dedication to client success.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8 text-center">
+                            <div class="w-full h-64 bg-gray-300 rounded-lg mb-6 flex items-center justify-center">
+                                <div class="text-gray-500">
+                                    <i class="fas fa-history text-4xl mb-2"></i>
+                                    <p class="text-sm">Our Story Image Placeholder</p>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-xperbot-dark-blue mb-4">From Vision to Reality</h3>
+                            <p class="text-gray-600">
+                                Transforming complex robotic challenges into seamless, value-driven solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission and Vision Section -->
+        <section class="bg-xperbot-light-gray section-spacing">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                        <div class="w-16 h-16 bg-xperbot-bright-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-bullseye text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-4 text-center">Our Mission</h3>
+                        <p class="text-gray-700 text-center">
+                            To empower businesses globally by providing accessible, adaptable, and actionable robotics implementation solutions that drive efficiency, foster innovation, and deliver measurable value.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                        <div class="w-16 h-16 bg-xperbot-bright-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-eye text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-4 text-center">Our Vision</h3>
+                        <p class="text-gray-700 text-center">
+                            To be the leading global partner in robotics implementation, democratizing access to advanced automation technologies and shaping a future where intelligent machines seamlessly enhance human potential across all industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section class="bg-white section-spacing">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-xperbot-dark-blue mb-4">Meet Our Team</h2>
+                    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                        Our diverse team of experts is dedicated to your success, combining deep industry knowledge with technical prowess.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Team Member 1 -->
+                    <div class="text-center bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                        <img src="https://via.placeholder.com/150" alt="Team Member Name" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-2">John Doe</h3>
+                        <p class="text-xperbot-bright-blue font-semibold mb-4">CEO & Founder</p>
+                        <p class="text-gray-700">Visionary leader with over 20 years of experience in robotics and automation.</p>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="text-center bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                        <img src="https://via.placeholder.com/150" alt="Team Member Name" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-2">Jane Smith</h3>
+                        <p class="text-xperbot-bright-blue font-semibold mb-4">Chief Technology Officer</p>
+                        <p class="text-gray-700">Expert in AI and machine learning, driving our technological advancements.</p>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="text-center bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                        <img src="https://via.placeholder.com/150" alt="Team Member Name" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-2">Emily White</h3>
+                        <p class="text-xperbot-bright-blue font-semibold mb-4">Head of Operations</p>
+                        <p class="text-gray-700">Ensuring seamless project execution and client satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="Images/logo.png" alt="Xperbot Logo" class="h-10">
+                    </div>
+                    <p class="text-gray-700 mb-6 max-w-md">
+                        Making advanced automation accessible, adaptable, and actionable for businesses worldwide.
+                        Swiss precision meets global innovation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/xperbot2025/?viewAsMember=true" target="_blank" class="w-10 h-10 bg-gray-200 hover:bg-xperbot-bright-blue rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-linkedin text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-xperbot-dark-blue mb-6">Services</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><a href="index.html#solutions" class="hover:text-xperbot-bright-blue transition duration-300">Strategic Consultation</a></li>
+                        <li><a href="index.html#solutions" class="hover:text-xperbot-bright-blue transition duration-300">Custom Implementation</a></li>
+                        <li><a href="index.html#solutions" class="hover:text-xperbot-bright-blue transition duration-300">Training & Support</a></li>
+                        <li><a href="index.html#solutions" class="hover:text-xperbot-bright-blue transition duration-300">Compliance Services</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-xperbot-dark-blue mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><a href="about.html" class="hover:text-xperbot-bright-blue transition duration-300">About Us</a></li>
+                        <li><a href="careers.html" class="hover:text-xperbot-bright-blue transition duration-300">Careers</a></li>
+                        <li><a href="index.html#contact" class="hover:text-xperbot-bright-blue transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 mt-12 pt-8 text-center">
+                <p class="text-gray-700">
+                    © 2024 Xperbot. All rights reserved. | Making Advanced Automation Accessible, Adaptable, and Actionable.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('backdrop-blur-lg', 'bg-opacity-95');
+            } else {
+                header.classList.remove('backdrop-blur-lg', 'bg-opacity-95');
+            }
+        });
+
+        
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply animation to cards and sections
+        document.querySelectorAll('.card-hover, section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
