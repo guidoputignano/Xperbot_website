@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --xperbot-dark-blue: #3D4B6D;
+            --xperbot-dark-blue: #2d3748;
             --xperbot-light-gray: #E5E5E5;
             --xperbot-black: #000000;
             --xperbot-white: #FFFFFF;
@@ -494,19 +494,18 @@
                 <div>
                     <h4 class="text-xl font-bold mb-6">Services</h4>
                     <ul class="space-y-3 text-gray-300">
-                        <li><a href="#" class="hover:text-white transition duration-300">Strategic Consultation</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Custom Implementation</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Training & Support</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Compliance Services</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-300">Strategic Consultation</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-300">Custom Implementation</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-300">Training & Support</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-300">Compliance Services</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="text-xl font-bold mb-6">Company</h4>
                     <ul class="space-y-3 text-gray-300">
-                        <li><a href="#about" class="hover:text-white transition duration-300">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">News</a></li>
+                        <li><a href="about.html" class="hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="careers.html" class="hover:text-white transition duration-300">Careers</a></li>
                         <li><a href="#contact" class="hover:text-white transition duration-300">Contact</a></li>
                     </ul>
                 </div>
@@ -544,12 +543,6 @@
             } else {
                 header.classList.remove('backdrop-blur-lg', 'bg-opacity-95');
             }
-        });
-
-        // Form submission handler
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
         });
 
         // Add fade-in animation on scroll
