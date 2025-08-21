@@ -94,6 +94,27 @@
             width: 200%;
             animation: scroll 30s linear infinite;
         }
+
+        .slick-list:before,
+        .slick-list:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 10%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .slick-list:before {
+            left: 0;
+            background: linear-gradient(to right, white, transparent);
+        }
+
+        .slick-list:after {
+            right: 0;
+            background: linear-gradient(to left, white, transparent);
+        }
     </style>
 </head>
 <body>
@@ -610,7 +631,9 @@
                 slidesToShow: 6,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 1500,
+                autoplaySpeed: 0,
+                speed: 5000,
+                cssEase: 'linear',
                 arrows: false,
                 dots: false,
                 pauseOnHover: false,
