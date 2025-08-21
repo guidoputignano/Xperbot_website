@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <style>
         :root {
             --xperbot-dark-blue: #2d3748;
@@ -152,84 +154,22 @@
 
     <!-- Logo Cloud Section -->
 <section class="bg-white py-12">
-    <div class="container mx-auto">
-        <div class="text-center mb-8">
-            <h2 class="text-2xl font-semibold text-xperbot-dark-blue">Trusted by Leading Institutions and Companies</h2>
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-xperbot-dark-blue mb-4">Trusted by Leading Institutions and Companies</h2>
         </div>
-        <div class="relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white z-10"></div>
-            <div class="flex animate-scroll">
-                <div class="flex items-center">
-                    <div class="p-8">
-                        <img src="Images/About/bosh.jpg" class="h-32 object-contain" alt="Bosh">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/clinton.jpg" class="h-32 object-contain" alt="Clinton Foundation">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/cosco.jpg" class="h-32 object-contain" alt="Cosco">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/eth.jpg" class="h-32 object-contain" alt="ETH Zurich">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/foresight.jpg" class="h-32 object-contain" alt="Foresight">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/harvard.jpg" class="h-32 object-contain" alt="Harvard">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/hesai.jpg" class="h-32 object-contain" alt="Hesai">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/mit.jpg" class="h-32 object-contain" alt="MIT">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/unionpay.jpg" class="h-32 object-contain" alt="UnionPay">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/uzurich.jpg" class="h-32 object-contain" alt="University of Zurich">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/wef.jpg" class="h-32 object-contain" alt="WEF">
-                    </div>
-                </div>
-                <div class="flex items-center" aria-hidden="true">
-                    <div class="p-8">
-                        <img src="Images/About/bosh.jpg" class="h-32 object-contain" alt="Bosh">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/clinton.jpg" class="h-32 object-contain" alt="Clinton Foundation">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/cosco.jpg" class="h-32 object-contain" alt="Cosco">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/eth.jpg" class="h-32 object-contain" alt="ETH Zurich">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/foresight.jpg" class="h-32 object-contain" alt="Foresight">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/harvard.jpg" class="h-32 object-contain" alt="Harvard">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/hesai.jpg" class="h-32 object-contain" alt="Hesai">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/mit.jpg" class="h-32 object-contain" alt="MIT">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/unionpay.jpg" class="h-32 object-contain" alt="UnionPay">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/uzurich.jpg" class="h-32 object-contain" alt="University of Zurich">
-                    </div>
-                    <div class="p-8">
-                        <img src="Images/About/wef.jpg" class="h-32 object-contain" alt="WEF">
-                    </div>
-                </div>
-            </div>
+        <div class="logo-carousel">
+            <div><img src="Images/About/bosh.jpg" alt="Bosh" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/clinton.jpg" alt="Clinton Foundation" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/cosco.jpg" alt="Cosco" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/eth.jpg" alt="ETH Zurich" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/foresight.jpg" alt="Foresight" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/harvard.jpg" alt="Harvard" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/hesai.jpg" alt="Hesai" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/mit.jpg" alt="MIT" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/unionpay.jpg" alt="UnionPay" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/uzurich.jpg" alt="University of Zurich" class="h-24 mx-auto"></div>
+            <div><img src="Images/About/wef.jpg" alt="WEF" class="h-24 mx-auto"></div>
         </div>
     </div>
 </section>
@@ -660,6 +600,32 @@
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.logo-carousel').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
         });
     </script>
 </body>
