@@ -82,6 +82,16 @@
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
         }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-scroll {
+            display: flex;
+            width: 200%;
+            animation: scroll 30s linear infinite;
+        }
     </style>
 </head>
 <body>
@@ -139,6 +149,90 @@
             </div>
         </div>
     </section>
+
+    <!-- Logo Cloud Section -->
+<section class="bg-white py-12">
+    <div class="container mx-auto">
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-semibold text-xperbot-dark-blue">Trusted by Leading Institutions and Companies</h2>
+        </div>
+        <div class="relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white z-10"></div>
+            <div class="flex animate-scroll">
+                <div class="flex items-center">
+                    <div class="p-8">
+                        <img src="Images/About/bosh.jpg" class="h-32 object-contain" alt="Bosh">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/clinton.jpg" class="h-32 object-contain" alt="Clinton Foundation">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/cosco.jpg" class="h-32 object-contain" alt="Cosco">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/eth.jpg" class="h-32 object-contain" alt="ETH Zurich">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/foresight.jpg" class="h-32 object-contain" alt="Foresight">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/harvard.jpg" class="h-32 object-contain" alt="Harvard">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/hesai.jpg" class="h-32 object-contain" alt="Hesai">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/mit.jpg" class="h-32 object-contain" alt="MIT">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/unionpay.jpg" class="h-32 object-contain" alt="UnionPay">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/uzurich.jpg" class="h-32 object-contain" alt="University of Zurich">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/wef.jpg" class="h-32 object-contain" alt="WEF">
+                    </div>
+                </div>
+                <div class="flex items-center" aria-hidden="true">
+                    <div class="p-8">
+                        <img src="Images/About/bosh.jpg" class="h-32 object-contain" alt="Bosh">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/clinton.jpg" class="h-32 object-contain" alt="Clinton Foundation">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/cosco.jpg" class="h-32 object-contain" alt="Cosco">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/eth.jpg" class="h-32 object-contain" alt="ETH Zurich">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/foresight.jpg" class="h-32 object-contain" alt="Foresight">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/harvard.jpg" class="h-32 object-contain" alt="Harvard">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/hesai.jpg" class="h-32 object-contain" alt="Hesai">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/mit.jpg" class="h-32 object-contain" alt="MIT">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/unionpay.jpg" class="h-32 object-contain" alt="UnionPay">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/uzurich.jpg" class="h-32 object-contain" alt="University of Zurich">
+                    </div>
+                    <div class="p-8">
+                        <img src="Images/About/wef.jpg" class="h-32 object-contain" alt="WEF">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Market Statistics -->
     <section class="bg-white section-spacing">
