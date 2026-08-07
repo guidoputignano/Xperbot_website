@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSIP — Robotics Scene Interaction Platform | Xperbot</title>
+<meta name="description" content="RSIP turns a plain-language description of your scene into a validated robot solution — guided scene definition, AI matching against 727 robot models, digital-twin validation and a deployment-ready report.">
+<link rel="canonical" href="https://xperbot.ch/rsip.html">
+<meta property="og:title" content="RSIP — Robotics Scene Interaction Platform">
+<meta property="og:description" content="From scene to solution. The translation layer between the people who own the problem and the people who own the technology.">
+<meta property="og:type" content="website">
+<link rel="icon" href="Images/logo_adj.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/xperbot.css">
+<style>
+  .bars{display:grid;gap:13px}
+  .bar-row{display:grid;grid-template-columns:190px 1fr 62px;gap:16px;align-items:center;font-size:14.5px}
+  .bar-row .lbl{color:var(--ink);font-weight:600}
+  .bar-row .lbl i{font-style:normal;color:var(--ink-faint);font-weight:500}
+  .bar-track{display:block;height:11px;border-radius:6px;background:var(--panel-2);overflow:hidden}
+  .bar-fill{display:block;height:11px;border-radius:6px;background:linear-gradient(90deg,#4E86F5,#8FB8FF)}
+  .bar-row .val{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-soft);font-weight:600}
+  .domains{display:grid;gap:11px}
+  .domain{display:flex;align-items:center;gap:12px;font-size:14.5px;color:#BFC9D4}
+  .domain i{width:13px;height:13px;border-radius:4px;flex:none}
+  .domain b{margin-left:auto;color:var(--ink);font-variant-numeric:tabular-nums}
+  .who{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .who .card{border-top:4px solid var(--blue)}
+  .who .card:nth-child(2){border-top-color:var(--aal-green)}
+  .who .card:nth-child(3){border-top-color:var(--aal-amber)}
+  .rev{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .rev-block{border:1px solid var(--line);border-radius:16px;padding:28px;background:#fff}
+  .rev-block h4{margin-bottom:14px}
+  .rev-block ul{list-style:none;display:grid;gap:9px;font-size:15px;color:var(--ink-soft)}
+  .rev-block li::before{content:"›";color:var(--blue-deep);font-weight:800;margin-right:9px}
+  @media (max-width:860px){
+    .who,.rev{grid-template-columns:1fr}
+    .bar-row{grid-template-columns:150px 1fr 54px;gap:11px;font-size:13.5px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="Images/logo_transparent.png" alt="Xperbot"></a>
+    <div class="nav-links">
+      <a href="rsip.html" class="active">RSIP Platform</a>
+      <a href="aal.html">AAL Program</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#about">About</a>
+      <a href="careers.html">Careers</a>
+    </div>
+    <a class="nav-cta" href="#access">Request access</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="rsip.html">RSIP Platform</a>
+    <a href="aal.html">AAL Program</a>
+    <a href="services.html">Services</a>
+    <a href="index.html#about">About</a>
+    <a href="careers.html">Careers</a>
+    <a href="#access">Request access</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="page-hero">
+  <div class="wrap page-hero-grid">
+    <div>
+      <span class="kicker">Program 01 · Platform · 具智猎头</span>
+      <h1>RSIP — from scene<br>to solution.</h1>
+      <p class="lead" style="margin-top:22px;color:#BFC9D4">
+        The Robotics Scene Interaction Platform lets someone who knows the job — not the robotics — describe
+        what needs to happen, and receive a matched, validated, deployment-ready robot solution.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-blue" href="#access">Request early access</a>
+        <a class="btn btn-ghost-light" href="#how">See how it works ↓</a>
+      </div>
+      <div class="facts" style="margin-top:34px">
+        <span style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#C3CCD6;box-shadow:none"><b style="color:#fff">In development</b></span>
+        <span style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#C3CCD6;box-shadow:none">Core technology filed for patent</span>
+        <span style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#C3CCD6;box-shadow:none">PaaS · RaaS</span>
+      </div>
+    </div>
+    <div>
+      <svg viewBox="0 0 480 400" role="img" aria-label="RSIP flow: scene owner describes a scene, the platform structures, matches and validates it, and returns a solution to both the scene owner and the technology provider" style="width:100%;height:auto">
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="#6D9EFA"/>
+          </marker>
+        </defs>
+        <g font-family="Inter,sans-serif">
+          <!-- input -->
+          <rect x="10" y="10" width="460" height="66" rx="14" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+          <text x="30" y="38" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#6D9EFA">INPUT · PLAIN LANGUAGE</text>
+          <text x="30" y="60" font-size="14.5" fill="#E4EAF1">“Move boxes between our two warehouse aisles at night.”</text>
+          <line x1="240" y1="76" x2="240" y2="104" stroke="#6D9EFA" stroke-width="2" marker-end="url(#ar)"/>
+
+          <!-- engine -->
+          <rect x="10" y="106" width="460" height="186" rx="16" fill="rgba(109,158,250,.13)" stroke="rgba(109,158,250,.35)"/>
+          <text x="30" y="134" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#8FB8FF">RSIP ENGINE</text>
+          <g font-size="13.5" fill="#EAF0F8" font-weight="600">
+            <rect x="28" y="148" width="196" height="58" rx="11" fill="#1E2A38" stroke="rgba(255,255,255,.14)"/>
+            <text x="44" y="172">01 · Structure the scene</text>
+            <text x="44" y="192" font-size="12" font-weight="500" fill="#98A6B5">environment → task → constraints</text>
+
+            <rect x="256" y="148" width="196" height="58" rx="11" fill="#1E2A38" stroke="rgba(255,255,255,.14)"/>
+            <text x="272" y="172">02 · Match capability</text>
+            <text x="272" y="192" font-size="12" font-weight="500" fill="#98A6B5">knowledge graph + scoring</text>
+
+            <rect x="28" y="218" width="196" height="58" rx="11" fill="#1E2A38" stroke="rgba(255,255,255,.14)"/>
+            <text x="44" y="242">03 · Validate in twin</text>
+            <text x="44" y="262" font-size="12" font-weight="500" fill="#98A6B5">3D task chain, tuned live</text>
+
+            <rect x="256" y="218" width="196" height="58" rx="11" fill="#1E2A38" stroke="rgba(255,255,255,.14)"/>
+            <text x="272" y="242">04 · Export solution</text>
+            <text x="272" y="262" font-size="12" font-weight="500" fill="#98A6B5">report · spec · API</text>
+          </g>
+          <line x1="240" y1="292" x2="240" y2="320" stroke="#6D9EFA" stroke-width="2" marker-end="url(#ar)"/>
+
+          <!-- output -->
+          <rect x="10" y="322" width="460" height="66" rx="14" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+          <text x="30" y="350" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#6D9EFA">OUTPUT · DECISION-READY</text>
+          <text x="30" y="372" font-size="14.5" fill="#E4EAF1">Top-3 robots · suitability score · safety &amp; compliance report</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- ================= PROBLEM ================= -->
+<section class="panel">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">The problem</span>
+      <h2>The bottleneck is not the robot.<br>It is the conversation.</h2>
+      <p class="lead">
+        Robotics has an expression problem. The industry expert knows exactly what the job requires but cannot
+        state it in machine terms. The robot supplier has the capability but cannot see the scene. Between them
+        sits a slow, expensive, custom-engineering process that most projects never survive.
+      </p>
+    </div>
+    <div class="grid g3">
+      <div class="card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.9L2.5 17.4A2 2 0 004.2 20.4h15.6a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg></span>
+        <h3>No standard way to describe a scene</h3>
+        <p>Vertical scenarios have no shared vocabulary, so every deployment restarts custom development from zero — high cost, long cycles.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.9L2.5 17.4A2 2 0 004.2 20.4h15.6a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg></span>
+        <h3>Suppliers misread the requirement</h3>
+        <p>Robot companies struggle to interpret vertical needs precisely, so scene adaptation is slow and the first pilot often solves the wrong problem.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.9L2.5 17.4A2 2 0 004.2 20.4h15.6a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg></span>
+        <h3>No common language between the two</h3>
+        <p>Domain experts and robotics engineers talk past each other. Procurement decisions get made on brochures instead of evidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">How it works</span>
+      <h2>Four steps, one guided flow.</h2>
+      <p class="lead">No robotics vocabulary required at any point. The platform does the translation.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step">
+        <span class="n">01</span>
+        <div>
+          <h3>Guided scene definition</h3>
+          <p>
+            Describe the job the way you would to a colleague — in natural language, or by picking an industry
+            template and dragging task nodes into place. Choose the scene closest to your deployment, the tasks
+            the robot must handle, the traits of your environment and the capabilities you need.
+          </p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="n">02</span>
+        <div>
+          <h3>Intelligent parsing and matching</h3>
+          <p>
+            The platform decomposes your description into structured requirements — environment parameters such as
+            aisle width, then functional needs such as autonomous obstacle avoidance — and maps them onto robot skill
+            combinations. A knowledge graph and scoring engine rank the whole model database against your scene.
+          </p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="n">03</span>
+        <div>
+          <h3>Digital-twin validation</h3>
+          <p>
+            Preview the task chain in 3D before you commit. Adjust parameters live, watch where the workflow breaks,
+            and get an honest suitability score instead of a sales promise.
+          </p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="n">04</span>
+        <div>
+          <h3>Export a deployment-ready solution</h3>
+          <p>
+            One click produces a Robot Deployment Assessment Report — recommended models with specifications,
+            requirements analysis, safety assessment, compliance assessment and a phased implementation roadmap —
+            plus a standardised requirements document and API output for your supplier.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DATA COVERAGE ================= -->
+<section class="dark-sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Platform data</span>
+      <h2>A six-dimension taxonomy over the whole market.</h2>
+      <p class="lead" style="color:#BFC9D4">Every mainstream robot form factor and application domain, structured so it can be matched rather than browsed.</p>
+    </div>
+    <div class="stats reveal" style="margin-bottom:56px">
+      <div class="stat"><b>727</b><small>robot models</small></div>
+      <div class="stat"><b>337</b><small>manufacturers</small></div>
+      <div class="stat"><b>66</b><small>sub-categories</small></div>
+      <div class="stat"><b>6</b><small>classification dimensions</small></div>
+    </div>
+    <div class="split reveal" style="gap:56px;align-items:start">
+      <div>
+        <h3 style="margin-bottom:8px">Top 10 categories</h3>
+        <p style="font-size:14px;color:#8A97A5;margin-bottom:24px">The top ten cover 57% of all models in the database.</p>
+        <div class="bars">
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">Collaborative <i>协作</i></span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:100%"></span></span><span class="val" style="color:#AAB6C2">69</span></div>
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">Humanoid <i>人形</i></span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:88%"></span></span><span class="val" style="color:#AAB6C2">61</span></div>
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">Educational <i>教育</i></span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:67%"></span></span><span class="val" style="color:#AAB6C2">46</span></div>
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">Drone <i>无人机</i></span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:64%"></span></span><span class="val" style="color:#AAB6C2">44</span></div>
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">Industrial arm <i>工业</i></span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:61%"></span></span><span class="val" style="color:#AAB6C2">42</span></div>
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">Quadruped <i>四足</i></span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:48%"></span></span><span class="val" style="color:#AAB6C2">33</span></div>
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">AMR <i>自主移动</i></span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:46%"></span></span><span class="val" style="color:#AAB6C2">32</span></div>
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">Exoskeleton <i>外骨骼</i></span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:42%"></span></span><span class="val" style="color:#AAB6C2">29</span></div>
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">Mobile manipulator</span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:39%"></span></span><span class="val" style="color:#AAB6C2">27</span></div>
+          <div class="bar-row"><span class="lbl" style="color:#E4EAF1">Delivery <i>配送</i></span><span class="bar-track" style="background:rgba(255,255,255,.1)"><span class="bar-fill" style="width:38%"></span></span><span class="val" style="color:#AAB6C2">26</span></div>
+        </div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">Application domains</h3>
+        <p style="font-size:14px;color:#8A97A5;margin-bottom:24px">Service robots — professional and personal combined — account for 60% of coverage.</p>
+        <svg viewBox="0 0 260 260" role="img" aria-label="Application domain split: professional service 44 percent, industrial 22 percent, personal service 16 percent, medical 11 percent, special environment 7 percent" style="width:100%;max-width:250px;margin-bottom:26px">
+          <g transform="translate(130,130)" stroke="#18222E" stroke-width="2.5">
+            <path d="M0 0 L0 -110 A110 110 0 0 1 40.5 102.3 Z" fill="#2F63D8"/>
+            <path d="M0 0 L40.5 102.3 A110 110 0 0 1 -92.9 58.9 Z" fill="#E98A2B"/>
+            <path d="M0 0 L-92.9 58.9 A110 110 0 0 1 -99.5 -46.8 Z" fill="#EFC132"/>
+            <path d="M0 0 L-99.5 -46.8 A110 110 0 0 1 -46.8 -99.5 Z" fill="#5C9E2C"/>
+            <path d="M0 0 L-46.8 -99.5 A110 110 0 0 1 0 -110 Z" fill="#2AA6A6"/>
+          </g>
+        </svg>
+        <div class="domains">
+          <div class="domain"><i style="background:#2F63D8"></i>Professional service <b style="color:#fff">44%</b></div>
+          <div class="domain"><i style="background:#E98A2B"></i>Industrial <b style="color:#fff">22%</b></div>
+          <div class="domain"><i style="background:#EFC132"></i>Personal service <b style="color:#fff">16%</b></div>
+          <div class="domain"><i style="background:#5C9E2C"></i>Medical <b style="color:#fff">11%</b></div>
+          <div class="domain"><i style="background:#2AA6A6"></i>Special environment <b style="color:#fff">7%</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHO IT'S FOR ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Who it is for</span>
+      <h2>Three sides of the same gap.</h2>
+    </div>
+    <div class="who reveal">
+      <div class="card">
+        <span class="tag">Domain experts</span>
+        <h3>You know the job, not the robot</h3>
+        <p>
+          Clinicians, logistics managers, facility operators. You understand the pain point in detail but have no
+          way to convert it into parameters an engineer can build against. RSIP does that conversion for you.
+        </p>
+      </div>
+      <div class="card">
+        <span class="tag" style="background:rgba(92,158,44,.13);color:#41761D">Enterprise buyers</span>
+        <h3>You need proof before you purchase</h3>
+        <p>
+          Factories, warehouses, service operators wanting to cut cost and raise throughput — but facing hard
+          selection decisions and expensive trial-and-error. Validate feasibility before the capital request.
+        </p>
+      </div>
+      <div class="card">
+        <span class="tag" style="background:rgba(192,126,20,.13);color:#94600D">Technology suppliers</span>
+        <h3>You have capability, not reach</h3>
+        <p>
+          Algorithm firms and hardware makers with strong technology that cannot efficiently find the niches where
+          it fits. Reach real, specified scenes and cut the cost of custom development.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPARISON ================= -->
+<section class="panel">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Positioning</span>
+      <h2>Why not just use a simulation tool?</h2>
+      <p class="lead">Existing platforms serve engineers building robots. RSIP serves the people who need one.</p>
+    </div>
+    <div class="table-scroll reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Capability</th>
+            <th class="own">RSIP</th>
+            <th>Engineering simulation</th>
+            <th>Robot ecosystem platforms</th>
+            <th>AI simulation</th>
+            <th>Control middleware</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Scene modelling</strong></td>
+            <td class="own">Guided, multi-modal</td>
+            <td>High-barrier engineering modelling</td>
+            <td>No structured modelling</td>
+            <td>Requires modelling skills</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td><strong>Fit for non-technical users</strong></td>
+            <td class="own">Built for industry users</td>
+            <td>Engineers only</td>
+            <td>Control-engineering background</td>
+            <td>High barrier</td>
+            <td>Programming required</td>
+          </tr>
+          <tr>
+            <td><strong>AI recommendation</strong></td>
+            <td class="own">Knowledge graph + scoring</td>
+            <td>None</td>
+            <td>None</td>
+            <td>None</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td><strong>Real-time validation</strong></td>
+            <td class="own">Twin validation with feedback</td>
+            <td>Mostly offline simulation</td>
+            <td>None</td>
+            <td>Closed simulation</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td><strong>Open interfaces</strong></td>
+            <td class="own">Universal task protocol + API</td>
+            <td>Closed modelling ecosystem</td>
+            <td>Own hardware ecosystem</td>
+            <td>Closed system</td>
+            <td>Closed protocol</td>
+          </tr>
+          <tr>
+            <td><strong>Scalability</strong></td>
+            <td class="own">SaaS / RaaS</td>
+            <td>Engineering licences</td>
+            <td>Custom integration needed</td>
+            <td>No subscription model</td>
+            <td>Tied to device vendor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted reveal" style="font-size:14px;margin-top:16px">
+      Comparison of platform <em>types</em>, based on Xperbot's market analysis. Individual products vary.
+    </p>
+  </div>
+</section>
+
+<!-- ================= MODEL ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Business model</span>
+      <h2>A two-sided platform.</h2>
+      <p class="lead">
+        Scene owners subscribe to find and validate solutions. Technology providers pay for qualified,
+        already-specified demand. Both sides make the other more valuable.
+      </p>
+    </div>
+    <div class="rev reveal">
+      <div class="rev-block">
+        <span class="tag">Scene owners pay for</span>
+        <h4>Finding and proving the right solution</h4>
+        <ul>
+          <li>PaaS subscription — guided scene definition, digital twin, solution proposals</li>
+          <li>Quotation and plausibility assessment</li>
+          <li>Advanced procurement consulting</li>
+          <li>Configuration, application training and continuous update service</li>
+        </ul>
+      </div>
+      <div class="rev-block">
+        <span class="tag" style="background:rgba(192,126,20,.13);color:#94600D">Technology providers pay for</span>
+        <h4>Reaching specified demand</h4>
+        <ul>
+          <li>PaaS subscription and transaction fees</li>
+          <li>RaaS revenue share on deployed fleets</li>
+          <li>API calls and technology licensing</li>
+          <li>Lead generation, promotion and physical-AI training tools</li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid g3 reveal" style="margin-top:22px">
+      <div class="card panel" style="background:var(--panel)">
+        <h4 style="margin-bottom:9px">Addressable demand side</h4>
+        <p style="font-size:15px">Over 25 million enterprises worldwide across manufacturing, healthcare, retail and public services. A 1% pioneer adoption within five years is a 250,000-organisation market.</p>
+      </div>
+      <div class="card panel" style="background:var(--panel)">
+        <h4 style="margin-bottom:9px">Addressable supply side</h4>
+        <p style="font-size:15px">3,000+ industrial robot manufacturers and 20,000+ robotics technology companies today, projected to grow roughly tenfold within five years.</p>
+      </div>
+      <div class="card panel" style="background:var(--panel)">
+        <h4 style="margin-bottom:9px">Market context</h4>
+        <p style="font-size:15px">Global robotics is forecast at USD 32.4bn by 2029 (13.8% CAGR 2023–2029), with humanoid robots growing at an expected 71% CAGR.</p>
+      </div>
+    </div>
+    <p class="muted reveal" style="font-size:13.5px;margin-top:18px">
+      Market figures: World Robotics 2024 and Qianzhan Industry Research Institute, as compiled in Xperbot's RSIP analysis.
+    </p>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-band" id="access">
+  <div class="wrap cta-grid">
+    <div>
+      <span class="kicker">Early access</span>
+      <h2>Bring us a scene.</h2>
+      <p>
+        RSIP is in active development and we are working with a small group of pilot partners — scene owners with a
+        real deployment question, and robot suppliers who want their models represented in the matching database.
+        If that is you, we would like to hear from you.
+      </p>
+    </div>
+    <div class="cta-panel">
+      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=RSIP%20—%20Pilot%20partner%20(scene%20owner)">I have a scene to solve ↗</a>
+      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=RSIP%20—%20List%20our%20robots">List our robots ↗</a>
+      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=RSIP%20—%20Investor%20/%20partnership">Investment &amp; partnership ↗</a>
+      <p>info@xperbot.ch</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="Images/logo_transparent.png" alt="Xperbot">
+        <p>Making advanced automation accessible, adaptable and actionable. Swiss precision meets global innovation.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/xperbot2025/" aria-label="Xperbot on LinkedIn" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 22 11 22 14.5V21h-4v-5.8c0-1.4-.02-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V21H9z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="rsip.html">RSIP Platform</a></li>
+          <li><a href="aal.html">AAL Education</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#distribution">Robot distribution</a></li>
+          <li><a href="services.html#consulting">Implementation strategy</a></li>
+          <li><a href="services.html#events">Robots for events</a></li>
+          <li><a href="services.html#certification">Certification consultancy</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About us</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Xperbot. All rights reserved.</span>
+      <span>Zug &amp; Zurich, Switzerland · info@xperbot.ch</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/xperbot.js"></script>
+</body>
+</html>

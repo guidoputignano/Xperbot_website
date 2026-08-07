@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Distribution, Consulting, Events, Certification | Xperbot</title>
+<meta name="description" content="Xperbot services: authorised Swiss distribution of DDT robots, robotics implementation strategy consulting for private and corporate users, robots for events, and certification consultancy for the Swiss and EU market.">
+<link rel="canonical" href="https://xperbot.ch/services.html">
+<meta property="og:title" content="Xperbot Services">
+<meta property="og:description" content="Swiss distribution of DDT robots, implementation strategy consulting, robots for events, and certification support.">
+<meta property="og:type" content="website">
+<link rel="icon" href="Images/logo_adj.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/xperbot.css">
+<style>
+  .jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+  .jump a{
+    font-size:14px;font-weight:600;color:#C3CCD6;background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 17px;
+  }
+  .jump a:hover{background:#fff;color:var(--ink);border-color:#fff}
+  .svc{border-top:1px solid var(--line)}
+  .svc-head{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-bottom:14px}
+  .svc-num{
+    width:52px;height:52px;border-radius:14px;background:var(--blue-wash);color:var(--blue-deep);
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:none;
+  }
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+  .tier{border:1px solid var(--line);border-radius:14px;padding:24px;background:#fff}
+  .tier h4{margin-bottom:6px}
+  .tier .who{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-deep);margin-bottom:12px}
+  .tier ul{list-style:none;display:grid;gap:8px;font-size:14.5px;color:var(--ink-soft);margin-top:12px}
+  .tier li::before{content:"—";color:var(--ink-faint);margin-right:9px}
+  .deliver{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 26px;margin-top:26px;list-style:none}
+  .deliver li{display:grid;grid-template-columns:20px 1fr;gap:11px;font-size:15px;color:var(--ink-soft)}
+  .deliver svg{width:18px;height:18px;stroke:var(--blue-deep);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round;margin-top:4px}
+  .spec{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:28px}
+  .spec dl{display:grid;grid-template-columns:auto 1fr;gap:12px 20px;font-size:15px;margin-top:6px}
+  .spec dt{font-weight:650;color:var(--ink)}
+  .spec dd{color:var(--ink-soft)}
+  .note{font-size:13.5px;color:var(--ink-faint);margin-top:18px}
+  @media (max-width:860px){
+    .tiers,.deliver{grid-template-columns:1fr}
+    .spec dl{grid-template-columns:1fr;gap:4px 0}
+    .spec dd{margin-bottom:10px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="Images/logo_transparent.png" alt="Xperbot"></a>
+    <div class="nav-links">
+      <a href="rsip.html">RSIP Platform</a>
+      <a href="aal.html">AAL Program</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="index.html#about">About</a>
+      <a href="careers.html">Careers</a>
+    </div>
+    <a class="nav-cta" href="#enquire">Contact us</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div class="nav-mobile">
+    <a href="rsip.html">RSIP Platform</a>
+    <a href="aal.html">AAL Program</a>
+    <a href="services.html">Services</a>
+    <a href="index.html#about">About</a>
+    <a href="careers.html">Careers</a>
+    <a href="#enquire">Contact us</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap" style="max-width:900px">
+    <span class="kicker">Services</span>
+    <h1>Four ways we get robots working.</h1>
+    <p class="lead" style="margin-top:22px;color:#BFC9D4">
+      Everything from putting the right machine in your hands, to deciding whether you need one at all,
+      to making sure it is legal to sell and safe to run. Engaged separately or as one programme.
+    </p>
+    <div class="jump">
+      <a href="#distribution">01 · Robot distribution</a>
+      <a href="#consulting">02 · Implementation strategy</a>
+      <a href="#events">03 · Robots for events</a>
+      <a href="#certification">04 · Certification consultancy</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 01 DISTRIBUTION ============ -->
+<section class="svc" id="distribution">
+  <div class="wrap">
+    <div class="split" style="align-items:start">
+      <div class="reveal">
+        <div class="svc-head">
+          <span class="svc-num">01</span>
+          <span class="kicker" style="margin:0">Distribution · Switzerland</span>
+        </div>
+        <h2>Authorised Swiss distributor<br>for DDT robots.</h2>
+        <p class="lead" style="margin-top:20px">
+          Xperbot is the Swiss distribution partner for <b style="color:var(--ink)">DDT — Direct Drive Technology</b>,
+          the manufacturer behind the DIABLO and TITA wheel-legged robots and the direct-drive actuator technology
+          underneath them. Wheel-legged platforms combine the speed and efficiency of wheels with the ability
+          to climb, balance and handle terrain that stops a conventional mobile robot.
+        </p>
+        <p class="lead" style="margin-top:16px">
+          Buying a robot from overseas is easy. Getting it delivered, conform, supported and repaired in
+          Switzerland is not. That is the part we take on.
+        </p>
+        <ul class="deliver">
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Sales, quotation and configuration advice</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Import, customs and Swiss delivery</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Conformity documentation for the local market</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Commissioning and operator training</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Spare parts and warranty handling</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Support in German, English, Italian and Chinese</span></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-blue" href="mailto:info@xperbot.ch?subject=DDT%20robots%20—%20Switzerland%20enquiry">Request a quote</a>
+          <a class="btn" href="mailto:info@xperbot.ch?subject=DDT%20robots%20—%20Demo%20request">Book a demo</a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="spec">
+          <span class="tag">Platforms we supply</span>
+          <h3 style="margin-bottom:16px">Wheel-legged robots &amp; direct-drive actuators</h3>
+          <dl>
+            <dt>DIABLO</dt>
+            <dd>Compact self-balancing two-wheel-legged robot. Developer and research platform, demonstrations, education.</dd>
+            <dt>TITA</dt>
+            <dd>Larger modular wheel-legged platform with payload mounting for sensors, arms and application-specific kit — inspection, research, patrol, media.</dd>
+            <dt>Actuators</dt>
+            <dd>Direct-drive joint modules for teams building their own robots.</dd>
+            <dt>Use cases</dt>
+            <dd>University and corporate research, robotics teaching, facility inspection, demonstrations and events.</dd>
+          </dl>
+          <p class="note">
+            Model line-up, specifications and availability change frequently. Ask us for the current
+            configuration sheet and Swiss pricing — we confirm both in writing before any order.
+          </p>
+        </div>
+        <div class="card" style="margin-top:22px;background:var(--blue-wash);border-color:#CFDCF7">
+          <h4 style="margin-bottom:8px">Are you a robot manufacturer?</h4>
+          <p style="font-size:15px">
+            We are open to representing additional non-competing platforms in Switzerland, particularly in
+            service, inspection and education robotics. Talk to us about distribution.
+          </p>
+          <a class="arrow-link" href="mailto:info@xperbot.ch?subject=Distribution%20partnership%20—%20Switzerland">Discuss distribution →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 CONSULTING ============ -->
+<section class="svc panel" id="consulting">
+  <div class="wrap">
+    <div class="sec-head reveal" style="max-width:840px">
+      <div class="svc-head">
+        <span class="svc-num" style="background:#fff">02</span>
+        <span class="kicker" style="margin:0">Consulting</span>
+      </div>
+      <h2>Robotics implementation strategy — from a private user to a corporate fleet.</h2>
+      <p class="lead">
+        Most robotics disappointment is a specification failure, not a technology failure. We work on the
+        decision before the purchase: what problem is actually being solved, whether a robot is the right
+        answer, which one, at what cost, and what has to change around it to make it work.
+      </p>
+    </div>
+
+    <div class="tiers reveal">
+      <div class="tier">
+        <div class="who">Private &amp; individual</div>
+        <h4>One robot, done properly</h4>
+        <p style="font-size:15px;color:var(--ink-soft)">For private owners, collectors, makers and family users choosing their first serious machine.</p>
+        <ul>
+          <li>Needs and expectation setting</li>
+          <li>Model selection and honest limitations</li>
+          <li>Purchase, setup and safe operation</li>
+          <li>Home or studio integration advice</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <div class="who">SME &amp; institution</div>
+        <h4>One scene, proven</h4>
+        <p style="font-size:15px;color:var(--ink-soft)">For a workshop, warehouse, clinic, hotel, school or municipality automating a first concrete task.</p>
+        <ul>
+          <li>Scene and process analysis</li>
+          <li>Business case and ROI modelling</li>
+          <li>Vendor shortlist and tender support</li>
+          <li>Pilot design, measurement and review</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <div class="who">Corporate</div>
+        <h4>A fleet, governed</h4>
+        <p style="font-size:15px;color:var(--ink-soft)">For groups deploying across sites, where the hard parts are standards, governance and change management.</p>
+        <ul>
+          <li>Automation roadmap and portfolio triage</li>
+          <li>Multi-site rollout and standardisation</li>
+          <li>Safety, compliance and data governance</li>
+          <li>Workforce training and adoption</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="split reveal" style="margin-top:64px;align-items:start">
+      <div>
+        <h3 style="margin-bottom:18px">How an engagement runs</h3>
+        <div class="steps">
+          <div class="step" style="border-color:#D9DEE6">
+            <span class="n">01</span>
+            <div><h3>Discovery</h3><p>Site visit and interviews. We map the process as it really runs, not as the manual describes it.</p></div>
+          </div>
+          <div class="step" style="border-color:#D9DEE6">
+            <span class="n">02</span>
+            <div><h3>Scene definition</h3><p>The task, environment and constraints written down in a form a supplier can quote against — the same structured method behind <a href="rsip.html">RSIP</a>.</p></div>
+          </div>
+          <div class="step" style="border-color:#D9DEE6">
+            <span class="n">03</span>
+            <div><h3>Options &amp; business case</h3><p>Shortlisted technologies with costs, risks, payback and — where it applies — the recommendation not to automate.</p></div>
+          </div>
+          <div class="step" style="border-color:#D9DEE6">
+            <span class="n">04</span>
+            <div><h3>Pilot &amp; rollout</h3><p>Supplier selection, pilot supervision, measured acceptance criteria, then scaling with training and support in place.</p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="spec">
+          <span class="tag">What you receive</span>
+          <ul class="deliver" style="grid-template-columns:1fr;margin-top:18px">
+            <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>A structured requirements document your suppliers can bid against</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>A costed options comparison with risks made explicit</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>ROI model with the assumptions you can challenge</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Pilot protocol with pass/fail acceptance criteria</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Implementation roadmap by phase, with owners</span></li>
+          </ul>
+          <p class="note">
+            We are vendor-neutral in consulting engagements. Where a recommendation touches a product we
+            distribute, we say so in writing and you are free to buy elsewhere.
+          </p>
+        </div>
+        <div class="cta-row"><a class="btn btn-blue" href="mailto:info@xperbot.ch?subject=Robotics%20implementation%20consulting">Book a first conversation</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 EVENTS ============ -->
+<section class="svc" id="events">
+  <div class="wrap">
+    <div class="split" style="align-items:start">
+      <div class="reveal">
+        <div class="svc-head">
+          <span class="svc-num">03</span>
+          <span class="kicker" style="margin:0">Events</span>
+        </div>
+        <h2>Robots that make people stop walking.</h2>
+        <p class="lead" style="margin-top:20px">
+          A robot on a stand is the difference between a brochure nobody takes and a queue. We supply the
+          machines, the operators and the choreography — and we handle the unglamorous parts: power, floor
+          conditions, crowd safety, insurance and a plan for when something goes wrong in front of 400 people.
+        </p>
+        <ul class="deliver">
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Trade fairs and exhibition stands</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Conferences and keynote demonstrations</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Brand activations and retail openings</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Corporate parties and private events</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>School and university open days</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Film, photo and media production</span></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-blue" href="mailto:info@xperbot.ch?subject=Robots%20for%20an%20event%20—%20enquiry">Enquire about your event</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="spec">
+          <span class="tag">Included as standard</span>
+          <h3 style="margin-bottom:16px">Turn-key, not drop-and-pray</h3>
+          <dl>
+            <dt>Fleet</dt>
+            <dd>Wheel-legged, quadruped, humanoid-style and interactive service robots, matched to the space and the audience.</dd>
+            <dt>Crew</dt>
+            <dd>Trained operators on site for the full duration, plus a technician for setup and teardown.</dd>
+            <dt>Programme</dt>
+            <dd>Scripted demo loops, product-message integration, photo moments and audience interaction — rehearsed in advance.</dd>
+            <dt>Safety</dt>
+            <dd>Site risk assessment, marked operating zone, emergency stop discipline and liability insurance.</dd>
+            <dt>Languages</dt>
+            <dd>Presenters in German, English, Italian or Chinese.</dd>
+          </dl>
+          <p class="note">
+            Tell us the venue, dates, audience size and what you want people to remember. We come back with
+            a concept and a fixed price.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 CERTIFICATION ============ -->
+<section class="svc panel" id="certification">
+  <div class="wrap">
+    <div class="sec-head reveal" style="max-width:840px">
+      <div class="svc-head">
+        <span class="svc-num" style="background:#fff">04</span>
+        <span class="kicker" style="margin:0">Certification consultancy</span>
+      </div>
+      <h2>Getting a robot legally onto the Swiss and EU market.</h2>
+      <p class="lead">
+        Conformity is where excellent robots stall at the border. We guide manufacturers, importers and
+        operators through the route to market: which legislation applies, which standards to design against,
+        what evidence has to exist, and what has to be in the file before anything is placed on the market.
+      </p>
+    </div>
+
+    <div class="grid g2 reveal">
+      <div class="card">
+        <h3 style="margin-bottom:14px">For manufacturers &amp; importers</h3>
+        <ul class="deliver" style="grid-template-columns:1fr;margin-top:6px">
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Regulatory gap analysis and applicable-legislation mapping</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Conformity route and standards selection</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Risk assessment support to ISO 12100 methodology</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Technical file structure and documentation review</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Test-house coordination and lab liaison</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Instructions, marking and Declaration of Conformity review</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>EU/Swiss authorised-representative and importer duties</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:14px">For operators &amp; buyers</h3>
+        <ul class="deliver" style="grid-template-columns:1fr;margin-top:6px">
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Due diligence on a supplier's conformity claims before you buy</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Workplace risk assessment for the robot in your actual scene</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Safety concept for human–robot shared spaces</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Operator instruction and training documentation</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Data protection and AI-governance review of deployed systems</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Modification assessment when you change or add to a machine</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="spec reveal" style="margin-top:34px;background:#fff">
+      <span class="tag">Frameworks we work in</span>
+      <div class="grid g3" style="gap:26px;margin-top:16px">
+        <div>
+          <h4 style="margin-bottom:10px">EU market</h4>
+          <p style="font-size:14.5px;color:var(--ink-soft)">
+            Machinery Directive 2006/42/EC and the incoming Machinery Regulation (EU) 2023/1230, EMC 2014/30/EU,
+            Radio Equipment 2014/53/EU, Low Voltage 2014/35/EU, RoHS, WEEE, GPSR, the Batteries Regulation and
+            the AI Act where an AI system is in scope.
+          </p>
+        </div>
+        <div>
+          <h4 style="margin-bottom:10px">Switzerland</h4>
+          <p style="font-size:14.5px;color:var(--ink-soft)">
+            Product Safety Act (PrSG) and Machinery Ordinance (MaschV), the Swiss–EU Mutual Recognition Agreement,
+            OFCOM/BAKOM radio requirements, SUVA workplace obligations and Swiss data-protection law (revFADP).
+          </p>
+        </div>
+        <div>
+          <h4 style="margin-bottom:10px">Standards</h4>
+          <p style="font-size:14.5px;color:var(--ink-soft)">
+            ISO 12100 risk assessment, ISO 10218-1/-2 and ISO/TS 15066 for industrial and collaborative robots,
+            ISO 13482 for personal-care robots, ISO 3691-4 for driverless industrial trucks, plus the relevant
+            functional-safety and EMC standards.
+          </p>
+        </div>
+      </div>
+      <p class="note">
+        Xperbot provides consultancy and documentation support. We are not a notified body or a testing
+        laboratory — where third-party assessment or accredited testing is required, we identify it early
+        and manage the process with the appropriate body on your behalf.
+      </p>
+    </div>
+    <div class="cta-row reveal"><a class="btn btn-blue" href="mailto:info@xperbot.ch?subject=Certification%20consultancy%20enquiry">Ask a certification question</a></div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band" id="enquire">
+  <div class="wrap cta-grid">
+    <div>
+      <span class="kicker">Get in touch</span>
+      <h2>Not sure which one you need?</h2>
+      <p>
+        Most enquiries start somewhere in the middle — “we think we want a robot, but…”. Send us the situation
+        in a few lines and we will tell you honestly whether it is a purchase, a project, a compliance question
+        or nothing at all.
+      </p>
+    </div>
+    <div class="cta-panel">
+      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=DDT%20robots%20—%20Switzerland%20enquiry">Buy a robot ↗</a>
+      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=Robotics%20implementation%20consulting">Consulting ↗</a>
+      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=Robots%20for%20an%20event%20—%20enquiry">Event robots ↗</a>
+      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=Certification%20consultancy%20enquiry">Certification ↗</a>
+      <p>info@xperbot.ch · +41 78 260 20 85</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="Images/logo_transparent.png" alt="Xperbot">
+        <p>Making advanced automation accessible, adaptable and actionable. Swiss precision meets global innovation.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/xperbot2025/" aria-label="Xperbot on LinkedIn" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 22 11 22 14.5V21h-4v-5.8c0-1.4-.02-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V21H9z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="rsip.html">RSIP Platform</a></li>
+          <li><a href="aal.html">AAL Education</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#distribution">Robot distribution</a></li>
+          <li><a href="services.html#consulting">Implementation strategy</a></li>
+          <li><a href="services.html#events">Robots for events</a></li>
+          <li><a href="services.html#certification">Certification consultancy</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About us</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Xperbot. All rights reserved.</span>
+      <span>Zug &amp; Zurich, Switzerland · info@xperbot.ch</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/xperbot.js"></script>
+</body>
+</html>
