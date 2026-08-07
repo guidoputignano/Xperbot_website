@@ -1,462 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Xperbot — Where Experts Meet Robotics</title>
-<meta name="description" content="Xperbot closes the last mile of robotics: the RSIP scene-interaction platform, the AAL embodied-AI education program, Swiss distribution of DDT robots, implementation consulting, event robots and certification support.">
-<link rel="canonical" href="https://xperbot.ch/">
-<meta property="og:title" content="Xperbot — Where Experts Meet Robotics">
-<meta property="og:description" content="Two flagship programs and four hands-on services that turn robot technology into working deployments. Zug, Switzerland.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://xperbot.ch/">
-<link rel="icon" href="Images/logo_adj.png">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/xperbot.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xperbot — The Swiss Robot Ecosystem</title>
+    <meta name="description" content="Everyone builds robots. Xperbot builds everything around them: robotics education (AAL), evidence-based decisions (RSIP), and local delivery, configuration and support in Switzerland.">
+    <link rel="icon" href="Images/logo_adj.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --xperbot-dark-blue: #2d3748;
+            --xperbot-light-gray: #E5E5E5;
+            --xperbot-black: #000000;
+            --xperbot-white: #FFFFFF;
+            --xperbot-bright-blue: #6D9EFA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--xperbot-black);
+        }
+
+        .bg-xperbot-dark-blue { background-color: var(--xperbot-dark-blue); }
+        .bg-xperbot-light-gray { background-color: var(--xperbot-light-gray); }
+        .bg-xperbot-bright-blue { background-color: var(--xperbot-bright-blue); }
+        .text-xperbot-dark-blue { color: var(--xperbot-dark-blue); }
+        .text-xperbot-bright-blue { color: var(--xperbot-bright-blue); }
+        .border-xperbot-bright-blue { border-color: var(--xperbot-bright-blue); }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .section-spacing {
+            padding: 5rem 0;
+        }
+
+        /* Keep the hero background image above the section's own background,
+           independent of the fade-in script (stacking context). */
+        #about { isolation: isolate; }
+
+        @media (max-width: 768px) {
+            .section-spacing {
+                padding: 3rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html"><img src="Images/logo_adj.png" alt="Xperbot Logo" class="h-10"></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-xperbot-bright-blue transition duration-300">Home</a>
+                    <a href="aal.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">AAL Education</a>
+                    <a href="rsip.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">RSIP Platform</a>
+                    <a href="services.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Services</a>
+                    <a href="#team" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Team</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Careers</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-xperbot-dark-blue">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-<!-- ================= NAV ================= -->
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="nav-logo" href="index.html"><img src="Images/logo_transparent.png" alt="Xperbot"></a>
-    <div class="nav-links">
-      <a href="rsip.html">RSIP Platform</a>
-      <a href="aal.html">AAL Program</a>
-      <a href="services.html">Services</a>
-      <a href="index.html#about">About</a>
-      <a href="careers.html">Careers</a>
-    </div>
-    <a class="nav-cta" href="index.html#contact">Contact us</a>
-    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-  </div>
-  <div class="nav-mobile">
-    <a href="rsip.html">RSIP Platform</a>
-    <a href="aal.html">AAL Program</a>
-    <a href="services.html">Services</a>
-    <a href="index.html#about">About</a>
-    <a href="careers.html">Careers</a>
-    <a href="index.html#contact">Contact us</a>
-  </div>
-</nav>
-
-<!-- ================= HERO ================= -->
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="kicker">Zug, Switzerland · Robotics implementation</span>
-      <h1>Where experts meet <span class="grad">robotics</span>.</h1>
-      <p class="lead">
-        Robot technology is advancing far faster than the ability of real organisations to deploy it.
-        Xperbot closes that last mile — with two flagship programs and four hands-on services that turn
-        a scene, a need and a budget into a robot that actually works on site.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-solid" href="#what-we-do">See what we do</a>
-        <a class="btn" href="#contact">Talk to us</a>
-      </div>
-      <div class="facts">
-        <span><b>Founded 2025</b></span>
-        <span><b>Zug &amp; Zurich</b></span>
-        <span>EN · DE · 中文</span>
-        <span>Europe ↔ China</span>
-      </div>
-    </div>
-
-    <div>
-      <svg viewBox="0 0 520 462" role="img" aria-label="Diagram: scene owners on one side, robot technology on the other, and the six Xperbot offerings bridging the last mile between them" style="width:100%;height:auto">
-        <!-- demand side -->
-        <rect x="6" y="6" width="508" height="84" rx="16" fill="#F5F7FA" stroke="#E3E7ED" stroke-width="1.5"/>
-        <text x="30" y="40" font-size="13" font-weight="700" letter-spacing="2.6" fill="#2F63D8" font-family="Inter,sans-serif">SCENE OWNERS</text>
-        <text x="30" y="66" font-size="14.5" fill="#59646F" font-family="Inter,sans-serif">healthcare · logistics · retail · public services · events</text>
-
-        <!-- gap label -->
-        <line x1="150" y1="112" x2="150" y2="140" stroke="#C6D0DC" stroke-width="2" stroke-dasharray="2 7"/>
-        <line x1="370" y1="112" x2="370" y2="140" stroke="#C6D0DC" stroke-width="2" stroke-dasharray="2 7"/>
-        <text x="260" y="131" text-anchor="middle" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#98A2AC" font-family="Inter,sans-serif">THE LAST MILE</text>
-
-        <!-- xperbot band -->
-        <rect x="6" y="146" width="508" height="176" rx="18" fill="#18222E"/>
-        <text x="30" y="180" font-size="13" font-weight="700" letter-spacing="2.6" fill="#6D9EFA" font-family="Inter,sans-serif">XPERBOT</text>
-        <g font-family="Inter,sans-serif" font-size="13.5" font-weight="600" fill="#EAF0F8">
-          <rect x="26" y="198" width="148" height="44" rx="11" fill="#2F63D8"/>
-          <text x="100" y="225" text-anchor="middle" fill="#fff">RSIP platform</text>
-          <rect x="186" y="198" width="148" height="44" rx="11" fill="#0E7C8C"/>
-          <text x="260" y="225" text-anchor="middle" fill="#fff">AAL education</text>
-          <rect x="346" y="198" width="148" height="44" rx="11" fill="rgba(255,255,255,.09)" stroke="rgba(255,255,255,.2)"/>
-          <text x="420" y="225" text-anchor="middle">Distribution</text>
-          <rect x="26" y="254" width="148" height="44" rx="11" fill="rgba(255,255,255,.09)" stroke="rgba(255,255,255,.2)"/>
-          <text x="100" y="281" text-anchor="middle">Consulting</text>
-          <rect x="186" y="254" width="148" height="44" rx="11" fill="rgba(255,255,255,.09)" stroke="rgba(255,255,255,.2)"/>
-          <text x="260" y="281" text-anchor="middle">Event robots</text>
-          <rect x="346" y="254" width="148" height="44" rx="11" fill="rgba(255,255,255,.09)" stroke="rgba(255,255,255,.2)"/>
-          <text x="420" y="281" text-anchor="middle">Certification</text>
-        </g>
-
-        <line x1="150" y1="328" x2="150" y2="356" stroke="#C6D0DC" stroke-width="2" stroke-dasharray="2 7"/>
-        <line x1="370" y1="328" x2="370" y2="356" stroke="#C6D0DC" stroke-width="2" stroke-dasharray="2 7"/>
-
-        <!-- supply side -->
-        <rect x="6" y="372" width="508" height="84" rx="16" fill="#F5F7FA" stroke="#E3E7ED" stroke-width="1.5"/>
-        <text x="30" y="406" font-size="13" font-weight="700" letter-spacing="2.6" fill="#2F63D8" font-family="Inter,sans-serif">ROBOT TECHNOLOGY</text>
-        <text x="30" y="432" font-size="14.5" fill="#59646F" font-family="Inter,sans-serif">manufacturers · AI &amp; algorithms · components · integrators</text>
-      </svg>
-    </div>
-  </div>
-</header>
-
-<!-- ================= WHAT WE DO ================= -->
-<section id="what-we-do" class="panel">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker">What we do</span>
-      <h2>Two programs we run. Four services we deliver.</h2>
-      <p class="lead">
-        The programs are Xperbot's own long-term builds — a technology platform and an education
-        curriculum. The services are what we do for clients today, from a single robot on a stage
-        to a certified corporate fleet.
-      </p>
-    </div>
-
-    <div class="grid g2" style="margin-bottom:22px">
-      <a class="card reveal" href="rsip.html" style="border-color:#CFDCF7;background:linear-gradient(180deg,#F7FAFF,#fff)">
-        <span class="tag">Program · RSIP</span>
-        <h3>RSIP — Robotics Scene Interaction Platform</h3>
-        <p>
-          From a plain-language description of your scene to a validated robot solution. RSIP structures
-          the requirement, matches it against 727 robot models from 337 manufacturers, validates it in a
-          digital twin and exports a deployment-ready specification.
-        </p>
-        <span class="arrow-link">Explore the platform →</span>
-      </a>
-      <a class="card reveal" href="aal.html" style="border-color:#BFDDE2;background:linear-gradient(180deg,#F5FBFC,#fff)">
-        <span class="tag tag-aal">Program · AAL</span>
-        <h3>AAL — Embodied AI education for children</h3>
-        <p>
-          Automation · Autonomy · Learning. A five-level curriculum on real robots for children aged 6–12
-          in Zurich, taught by AAL-certified teachers. Children move from commanding a robot to teaching
-          one how to learn.
-        </p>
-        <span class="arrow-link" style="color:var(--aal-teal)">Discover AAL →</span>
-      </a>
-    </div>
-
-    <div class="grid g4">
-      <a class="card reveal" href="services.html#distribution">
-        <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18.5" r="1.8"/><circle cx="17.5" cy="18.5" r="1.8"/></svg></span>
-        <h3>Robot distribution</h3>
-        <p>Authorised Swiss distributor for DDT (Direct Drive Technology) — wheel-legged robots with local delivery, support and spares.</p>
-        <span class="arrow-link">Details →</span>
-      </a>
-      <a class="card reveal" href="services.html#consulting">
-        <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></span>
-        <h3>Implementation strategy</h3>
-        <p>Robotics adoption consulting from private users to corporate fleets: scenario definition, selection, ROI, pilot and rollout.</p>
-        <span class="arrow-link">Details →</span>
-      </a>
-      <a class="card reveal" href="services.html#events">
-        <span class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 8V4M9 13h.01M15 13h.01M9.5 16h5"/></svg></span>
-        <h3>Robots for events</h3>
-        <p>Robot fleets, operators and choreography for trade fairs, conferences, brand activations and private events.</p>
-        <span class="arrow-link">Details →</span>
-      </a>
-      <a class="card reveal" href="services.html#certification">
-        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.4-2.9 8.3-7 9.5C7.9 19.3 5 15.4 5 11V6z"/><path d="M9 11.5l2 2 4-4"/></svg></span>
-        <h3>Certification consultancy</h3>
-        <p>Conformity strategy for robots entering the Swiss and EU market: CE route, standards, risk assessment, technical file.</p>
-        <span class="arrow-link">Details →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= RSIP FEATURE ================= -->
-<section id="rsip">
-  <div class="wrap split">
-    <div class="reveal">
-      <span class="kicker">Program 01 · Platform</span>
-      <h2>Describe the scene.<br>Get the robot solution.</h2>
-      <p class="lead" style="margin-top:20px">
-        The bottleneck in robotics is not the hardware — it is that the people who own the problem and the
-        people who own the technology do not share a language. RSIP is the translation layer between them.
-      </p>
-      <ul class="checks">
-        <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Guided scene definition</b> — describe the job in business language, not robotics terms.</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>AI matching</b> — requirements decomposed into capabilities, scored against the model database.</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Digital-twin validation</b> — see the task chain run before anyone signs a purchase order.</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Deployment report</b> — suitability, safety and compliance assessment you can act on.</span></li>
-      </ul>
-      <div class="cta-row"><a class="btn btn-blue" href="rsip.html">Explore RSIP</a></div>
-    </div>
-    <div class="reveal">
-      <div class="stats" style="grid-template-columns:1fr 1fr">
-        <div class="stat"><b>727</b><small>robot models in the database</small></div>
-        <div class="stat"><b>337</b><small>manufacturers covered</small></div>
-        <div class="stat"><b>66</b><small>robot categories, 6-dimension taxonomy</small></div>
-        <div class="stat"><b>4</b><small>steps from scene to specification</small></div>
-      </div>
-      <p class="muted" style="font-size:14px;margin-top:18px">
-        Core technology filed for patent. Platform in active development —
-        <a href="rsip.html#access">early-access partners welcome</a>.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= AAL FEATURE ================= -->
-<section class="dark-sec" id="aal">
-  <div class="wrap split">
-    <div class="reveal">
-      <span class="kicker" style="color:#5FD0DE">Program 02 · Education</span>
-      <h2>Children who understand<br>how robots become smart.</h2>
-      <p class="lead" style="margin-top:20px;color:#BFC9D4">
-        AAL is Xperbot's education program in Zurich for children aged 6–12. Five levels on real robots,
-        from giving a machine every instruction, to letting it decide, to teaching it how to learn.
-      </p>
-      <ul class="checks">
-        <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Five levels, ages 6–12</b> — each ending in a public finale children present themselves.</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Think first, logic first</b> — no run starts before the child has spoken a prediction.</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Documented curriculum</b> — AAL-certified teachers, max 16 children, working in pairs.</span></li>
-        <li><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Evidence of thinking</b> — mission logs, measured results and the 76-unit AAL Passport.</span></li>
-      </ul>
-      <div class="cta-row">
-        <a class="btn btn-ghost-light" href="aal.html">Discover the program</a>
-        <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=AAL%20—%20Book%20a%20visit">Book a visit</a>
-      </div>
-    </div>
-    <div class="reveal">
-      <svg viewBox="0 0 480 340" role="img" aria-label="The AAL ladder: automation, then autonomy, then learning" style="width:100%;height:auto">
-        <path d="M 58 286 L 420 92" stroke="rgba(255,255,255,.18)" stroke-width="2" stroke-dasharray="2 9" fill="none"/>
-        <g font-family="Inter,sans-serif">
-          <rect x="16" y="252" width="150" height="14" rx="7" fill="#0E7C8C"/>
-          <text x="91" y="292" text-anchor="middle" font-size="17" font-weight="800" fill="#3FBBCC">it can ACT</text>
-          <text x="91" y="312" text-anchor="middle" font-size="11.5" letter-spacing="1.6" fill="#8A97A5">AUTOMATION</text>
-
-          <rect x="164" y="176" width="150" height="14" rx="7" fill="#5C9E2C"/>
-          <text x="239" y="216" text-anchor="middle" font-size="17" font-weight="800" fill="#8CD152">it can DECIDE</text>
-          <text x="239" y="236" text-anchor="middle" font-size="11.5" letter-spacing="1.6" fill="#8A97A5">AUTONOMY</text>
-
-          <rect x="312" y="100" width="150" height="14" rx="7" fill="#C07E14"/>
-          <text x="387" y="140" text-anchor="middle" font-size="17" font-weight="800" fill="#E9AE45">it can LEARN</text>
-          <text x="387" y="160" text-anchor="middle" font-size="11.5" letter-spacing="1.6" fill="#8A97A5">LEARNING</text>
-
-          <text x="16" y="46" font-size="13" font-weight="700" letter-spacing="2.6" fill="#5FD0DE">A · A · L</text>
-          <text x="16" y="72" font-size="15" fill="#BFC9D4">One robot. Three stages. Ages 6 to 12.</text>
-        </g>
-      </svg>
-    </div>
-  </div>
-</section>
-
-<!-- ================= WHY XPERBOT ================= -->
-<section class="panel">
-  <div class="wrap">
-    <div class="sec-head center reveal">
-      <span class="kicker">Why Xperbot</span>
-      <h2>We work where the value chain breaks.</h2>
-      <p class="lead">Excellent robots fail in the field for reasons that have nothing to do with robotics.</p>
-    </div>
-    <div class="grid g3">
-      <div class="card reveal">
-        <h3>Demand-led, not product-led</h3>
-        <p>We start from your scene, your constraints and your users — then find the technology. Never the other way round.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Swiss base, China reach</h3>
-        <p>A team fluent in both the European regulatory context and the Chinese manufacturing ecosystem, in three working languages.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Whole lifecycle</h3>
-        <p>Needs analysis, sourcing, localisation, conformity, training and after-sales — one accountable partner instead of five.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about">
-  <div class="wrap split">
-    <div class="reveal">
-      <span class="kicker">About us</span>
-      <h2>Our story</h2>
-      <p class="lead" style="margin-top:20px">
-        Xperbot was founded in 2025 in Zug, Switzerland, on a simple observation: robot technology was
-        racing ahead while the organisations that need it were stuck — unable to specify what they wanted,
-        assess what was offered, or clear the regulatory and localisation hurdles in between.
-      </p>
-      <p class="lead" style="margin-top:16px">
-        We build the missing layer. Demand-driven, ecosystem-enabled, technology-powered — from requirement
-        analysis and matching, through localisation and conformity, to training and long-term support. Our
-        core value is simple: <b style="color:var(--ink)">expertise drives innovation</b>.
-      </p>
-      <div class="grid g2" style="margin-top:38px;gap:18px">
-        <div class="card">
-          <h4 style="margin-bottom:9px">Our mission</h4>
-          <p style="font-size:15px">To empower organisations with accessible, adaptable and actionable robotics implementation that delivers measurable value.</p>
+    <!-- Hero Section (original layout, new message) -->
+    <section id="about" class="relative bg-xperbot-light-gray section-spacing" style="padding-top: 8rem;">
+        <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('Images/first_image.jpg'); z-index: -2;"></div>
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50" style="z-index: -1;"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight text-white">
+                Everyone builds robots.<br>
+                We build <span class="underline">everything around them</span>.
+            </h1>
+            <p class="text-xl mb-8 leading-relaxed opacity-90 text-white max-w-3xl mx-auto">
+                Xperbot is the Swiss robot ecosystem — learn robotics from age six, decide with
+                evidence, and get robots delivered, configured and supported locally.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="#ecosystem" class="bg-xperbot-bright-blue text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition duration-300 shadow-lg">
+                    Explore the ecosystem
+                </a>
+                <a href="#contact" class="border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-xperbot-dark-blue transition duration-300">
+                    Talk to us
+                </a>
+            </div>
         </div>
-        <div class="card">
-          <h4 style="margin-bottom:9px">Our vision</h4>
-          <p style="font-size:15px">A world where intelligent machines seamlessly enhance human potential — because deploying them is no longer the hard part.</p>
-        </div>
-      </div>
-    </div>
-    <div class="reveal">
-      <figure class="split-media">
-        <img src="Images/AboutXperbot.jpg" alt="Xperbot — from vision to reality" style="width:100%;height:420px;object-fit:cover">
-      </figure>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= NETWORK ================= -->
-<section class="panel sec-tight">
-  <div class="wrap">
-    <div class="sec-head center reveal" style="margin-bottom:44px">
-      <span class="kicker">Our global network</span>
-      <h2 style="font-size:clamp(24px,2.6vw,32px)">Where our team has worked and studied</h2>
-    </div>
-    <div class="logos reveal">
-      <img src="Images/About/eth.jpg" alt="ETH Zurich">
-      <img src="Images/About/epfl.jpg" alt="EPFL">
-      <img src="Images/About/uzurich.jpg" alt="University of Zurich">
-      <img src="Images/About/mit.jpg" alt="MIT">
-      <img src="Images/About/harvard.jpg" alt="Harvard">
-      <img src="Images/About/wef.jpg" alt="World Economic Forum">
-      <img src="Images/About/bosh.jpg" alt="Bosch">
-      <img src="Images/About/cosco.jpg" alt="COSCO Shipping">
-      <img src="Images/About/hesai.jpg" alt="Hesai">
-      <img src="Images/About/unionpay.jpg" alt="UnionPay">
-      <img src="Images/About/clinton.jpg" alt="Clinton Foundation">
-      <img src="Images/About/foresight.jpg" alt="Foresight Institute">
-    </div>
-  </div>
-</section>
-
-<!-- ================= TEAM ================= -->
-<section id="team">
-  <div class="wrap">
-    <div class="sec-head center reveal">
-      <span class="kicker">Our team</span>
-      <h2>The people behind Xperbot</h2>
-    </div>
-    <div class="people reveal">
-      <div class="person">
-        <img src="Images/Hui_400.jpg" alt="Hui Huang" width="440" height="440" loading="lazy">
-        <h3>Hui Huang</h3>
-        <p class="role">Co-Founder &amp; Managing Director</p>
-        <a href="mailto:hui.huang@xperbot.ch">hui.huang@xperbot.ch</a>
-      </div>
-      <div class="person">
-        <img src="Images/Guido_400.jpg" alt="Guido Putignano" width="440" height="440" loading="lazy">
-        <h3>Guido Putignano</h3>
-        <p class="role">Co-Founder &amp; COO</p>
-        <a href="mailto:guido.putignano@xperbot.ch">guido.putignano@xperbot.ch</a>
-      </div>
-    </div>
-    <div class="people-row reveal">
-      <div class="person">
-        <h3>Dr. Xiaomeng Wang</h3>
-        <p class="role">Co-Founder · AAL Program Director</p>
-        <a href="mailto:xiaomeng.wang@xperbot.ch">xiaomeng.wang@xperbot.ch</a>
-      </div>
-      <div class="person">
-        <h3>Dr. Dongqi Bao</h3>
-        <p class="role">Chief Technology Officer</p>
-        <a href="mailto:dongqi.bao@xperbot.ch">dongqi.bao@xperbot.ch</a>
-      </div>
-      <div class="person">
-        <h3>Dr. Tian Zhou</h3>
-        <p class="role">Senior Advisor</p>
-        <a href="mailto:tian.zhou@xperbot.ch">tian.zhou@xperbot.ch</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section class="cta-band" id="contact">
-  <div class="wrap cta-grid">
-    <div>
-      <span class="kicker">Contact</span>
-      <h2>Tell us about your scene.</h2>
-      <p>
-        A robot for a stand next month, a fleet decision for next year, a certification question, or a place
-        for your child in the next AAL course — start with one message and we will point you to the right person.
-      </p>
-      <div style="display:flex;flex-wrap:wrap;gap:34px;margin-top:32px;font-size:15px;color:#BFC9D4">
-        <div>
-          <div style="font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#8A97A5;margin-bottom:6px">Email</div>
-          <a href="mailto:info@xperbot.ch" style="color:#fff;font-weight:600">info@xperbot.ch</a>
+    <!-- The Ecosystem: Learn / Decide / Deploy -->
+    <section id="ecosystem" class="bg-white section-spacing">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-xperbot-dark-blue mb-4">One ecosystem. Three steps.</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A robot only creates value when people can command it, choose it wisely, and keep it
+                    running. Xperbot covers all three.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 01 LEARN -->
+                <a href="aal.html" class="block bg-white rounded-xl p-8 shadow-lg card-hover border-t-4" style="border-top-color:#0E7C8C;">
+                    <p class="text-sm font-bold tracking-widest uppercase mb-3" style="color:#0E7C8C;">01 · Learn</p>
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-3">AAL — Robotics education</h3>
+                    <p class="text-gray-600 mb-6">
+                        Our embodied-AI school in Zurich. Five levels on real robots for children aged
+                        6–12 — from giving a machine every command to teaching it how to learn.
+                    </p>
+                    <span class="font-semibold" style="color:#0E7C8C;">Discover AAL →</span>
+                </a>
+                <!-- 02 DECIDE -->
+                <a href="rsip.html" class="block bg-white rounded-xl p-8 shadow-lg card-hover border-t-4 border-xperbot-bright-blue">
+                    <p class="text-sm font-bold tracking-widest uppercase text-xperbot-bright-blue mb-3">02 · Decide</p>
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-3">RSIP — Scene interaction platform</h3>
+                    <p class="text-gray-600 mb-6">
+                        Describe your scene in plain language; RSIP matches it against 727 robot models,
+                        validates it in a digital twin and returns a decision you can defend.
+                    </p>
+                    <span class="text-xperbot-bright-blue font-semibold">Explore RSIP →</span>
+                </a>
+                <!-- 03 DEPLOY -->
+                <a href="services.html" class="block bg-white rounded-xl p-8 shadow-lg card-hover border-t-4" style="border-top-color:#2d3748;">
+                    <p class="text-sm font-bold tracking-widest uppercase text-xperbot-dark-blue mb-3">03 · Deploy</p>
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-3">Local delivery &amp; configuration</h3>
+                    <p class="text-gray-600 mb-6">
+                        Robots delivered, certified, configured and supported in Switzerland — DDT
+                        distribution, implementation consulting, event fleets and certification support.
+                    </p>
+                    <span class="text-xperbot-dark-blue font-semibold">See our services →</span>
+                </a>
+            </div>
         </div>
-        <div>
-          <div style="font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#8A97A5;margin-bottom:6px">Phone</div>
-          <a href="tel:+41782602085" style="color:#fff">+41 78 260 20 85</a><br>
-          <a href="tel:+393405258406" style="color:#fff">+39 340 525 8406</a><br>
-          <a href="tel:+8618651635308" style="color:#fff">+86 186 5163 5308</a>
-        </div>
-        <div>
-          <div style="font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#8A97A5;margin-bottom:6px">Based in</div>
-          Zug &amp; Zurich, Switzerland
-        </div>
-      </div>
-    </div>
-    <div class="cta-panel">
-      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=Robotics%20implementation%20enquiry">General enquiry ↗</a>
-      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=DDT%20robots%20—%20Switzerland">Buy a DDT robot ↗</a>
-      <a class="btn btn-ghost-light" href="mailto:info@xperbot.ch?subject=AAL%20—%20Book%20a%20visit">AAL — book a visit ↗</a>
-      <p>We reply within two working days.</p>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <img src="Images/logo_transparent.png" alt="Xperbot">
-        <p>Making advanced automation accessible, adaptable and actionable. Swiss precision meets global innovation.</p>
-        <div class="social">
-          <a href="https://www.linkedin.com/company/xperbot2025/" aria-label="Xperbot on LinkedIn" rel="noopener">
-            <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 22 11 22 14.5V21h-4v-5.8c0-1.4-.02-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V21H9z"/></svg>
-          </a>
+    <!-- Our Story Section -->
+    <section class="bg-xperbot-light-gray section-spacing">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-xperbot-dark-blue mb-6">Our Story</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Founded in Switzerland, Xperbot emerged from a vision to bridge the critical gap between cutting-edge robotics innovation and practical, real-world implementation. We recognized that while robotic technology was advancing rapidly, many businesses struggled to integrate these solutions effectively due to complexities in regulatory compliance, localization, and specialized workforce training.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Our journey began with a commitment to simplify this process, offering comprehensive, end-to-end solutions that empower businesses to harness the full potential of automation. From our humble beginnings, we have grown into a trusted partner for companies worldwide, driven by our passion for innovation and our unwavering dedication to client success.
+                    </p>
+                </div>
+                <div>
+                    <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8 text-center">
+                        <img src="Images/AboutXperbot.jpg" alt="Our Story" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <h3 class="text-xl font-bold text-xperbot-dark-blue mb-4">From Vision to Reality</h3>
+                        <p class="text-gray-600">
+                            Transforming complex robotic challenges into seamless, value-driven solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="foot-col">
-        <h4>Programs</h4>
-        <ul>
-          <li><a href="rsip.html">RSIP Platform</a></li>
-          <li><a href="aal.html">AAL Education</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html#distribution">Robot distribution</a></li>
-          <li><a href="services.html#consulting">Implementation strategy</a></li>
-          <li><a href="services.html#events">Robots for events</a></li>
-          <li><a href="services.html#certification">Certification consultancy</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="index.html#about">About us</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="careers.html">Careers</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-legal">
-      <span>© 2026 Xperbot. All rights reserved.</span>
-      <span>Zug &amp; Zurich, Switzerland · info@xperbot.ch</span>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<script src="assets/xperbot.js"></script>
+    <!-- Mission and Vision Section -->
+    <section class="bg-white section-spacing">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-xperbot-bright-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullseye text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-4 text-center">Our Mission</h3>
+                    <p class="text-gray-700 text-center">
+                        To empower businesses globally by providing accessible, adaptable, and actionable robotics implementation solutions that drive efficiency, foster innovation, and deliver measurable value.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-xperbot-bright-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-eye text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-4 text-center">Our Vision</h3>
+                    <p class="text-gray-700 text-center">
+                        To be the leading global partner in robotics implementation, democratizing access to advanced automation technologies and shaping a future where intelligent machines seamlessly enhance human potential across all industries.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="bg-xperbot-light-gray section-spacing">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-xperbot-dark-blue mb-4">Our Team</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Meet the experts behind Xperbot.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                <!-- Hui Huang -->
+                <div class="text-center">
+                    <img src="Images/Hui_400.jpg" alt="Hui Huang" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue">Hui Huang</h3>
+                    <p class="text-gray-600">Co-Founder &amp; Managing Director</p>
+                    <a href="mailto:hui.huang@xperbot.ch" class="text-xperbot-bright-blue hover:underline">hui.huang@xperbot.ch</a>
+                </div>
+                <!-- Guido Putignano -->
+                <div class="text-center">
+                    <img src="Images/Guido_400.jpg" alt="Guido Putignano" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue">Guido Putignano</h3>
+                    <p class="text-gray-600">Co-Founder &amp; COO</p>
+                    <a href="mailto:guido.putignano@xperbot.ch" class="text-xperbot-bright-blue hover:underline">guido.putignano@xperbot.ch</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Xiaomeng Wang -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue">Dr. Xiaomeng Wang</h3>
+                    <p class="text-gray-600">Co-Founder · AAL Program Director</p>
+                    <a href="mailto:xiaomeng.wang@xperbot.ch" class="text-xperbot-bright-blue hover:underline">xiaomeng.wang@xperbot.ch</a>
+                </div>
+                <!-- Dongqi Bao -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue">Dr. Dongqi Bao</h3>
+                    <p class="text-gray-600">CTO</p>
+                    <a href="mailto:dongqi.bao@xperbot.ch" class="text-xperbot-bright-blue hover:underline">dongqi.bao@xperbot.ch</a>
+                </div>
+                <!-- Tian Zhou -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-xperbot-dark-blue">Dr. Tian Zhou</h3>
+                    <p class="text-gray-600">Senior Advisor</p>
+                    <a href="mailto:tian.zhou@xperbot.ch" class="text-xperbot-bright-blue hover:underline">tian.zhou@xperbot.ch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white section-spacing">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto text-center">
+                <div class="space-y-6">
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="w-10 h-10 bg-xperbot-bright-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-white text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xperbot-dark-blue">Email</h4>
+                            <p class="text-gray-600">info@xperbot.ch</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="w-10 h-10 bg-xperbot-bright-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-white text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xperbot-dark-blue">Phone</h4>
+                            <p class="text-gray-600">+86 18651635308</p>
+                            <p class="text-gray-600">+39 3405258406</p>
+                            <p class="text-gray-600">+41 782602085</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                     <a href="mailto:info@xperbot.ch" class="w-full inline-block bg-xperbot-bright-blue text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition duration-300 shadow-lg sm:w-auto">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Send Us An Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-xperbot-light-gray text-xperbot-dark-blue py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <a href="index.html"><img src="Images/logo_adj.png" alt="Xperbot Logo" class="h-10"></a>
+                    </div>
+                    <p class="text-gray-700 mb-6 max-w-md">
+                        Everyone builds robots. We build everything around them.
+                        Swiss precision meets global innovation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/xperbot2025/" class="w-10 h-10 bg-xperbot-dark-blue hover:bg-xperbot-bright-blue text-white rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-linkedin text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Ecosystem</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><a href="aal.html" class="hover:text-xperbot-bright-blue transition duration-300">Learn — AAL Education</a></li>
+                        <li><a href="rsip.html" class="hover:text-xperbot-bright-blue transition duration-300">Decide — RSIP Platform</a></li>
+                        <li><a href="services.html" class="hover:text-xperbot-bright-blue transition duration-300">Deploy — Services</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Company</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><a href="#about" class="hover:text-xperbot-bright-blue transition duration-300">About Us</a></li>
+                        <li><a href="#team" class="hover:text-xperbot-bright-blue transition duration-300">Team</a></li>
+                        <li><a href="careers.html" class="hover:text-xperbot-bright-blue transition duration-300">Careers</a></li>
+                        <li><a href="#contact" class="hover:text-xperbot-bright-blue transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 mt-12 pt-8 text-center">
+                <p class="text-gray-600">
+                    © 2026 Xperbot. All rights reserved. | Everyone builds robots. We build everything around them.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('backdrop-blur-lg', 'bg-opacity-95');
+            } else {
+                header.classList.remove('backdrop-blur-lg', 'bg-opacity-95');
+            }
+        });
+
+        // Add fade-in animation on scroll (as on the original site)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover, section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
