@@ -8,6 +8,12 @@
 <link rel="canonical" href="https://xperbot.ch/careers.html">
 <link rel="icon" href="Images/logo_adj.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<style>
+  .text-xperbot-bright-blue{color:#6D9EFA}
+  .text-xperbot-dark-blue{color:#2d3748}
+</style>
 <link rel="stylesheet" href="assets/xperbot.css">
 <style>
   .job{
@@ -24,32 +30,38 @@
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="nav-logo" href="index.html"><img src="Images/logo_transparent.png" alt="Xperbot"></a>
-    <div class="nav-links">
-      <a href="rsip.html">RSIP Platform</a>
-      <a href="aal.html">AAL Program</a>
-      <a href="services.html">Services</a>
-      <a href="index.html#about">About</a>
-      <a href="careers.html" class="active">Careers</a>
-    </div>
-    <a class="nav-cta" href="index.html#contact">Contact us</a>
-    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-  </div>
-  <div class="nav-mobile">
-    <a href="rsip.html">RSIP Platform</a>
-    <a href="aal.html">AAL Program</a>
-    <a href="services.html">Services</a>
-    <a href="index.html#about">About</a>
-    <a href="careers.html">Careers</a>
-    <a href="index.html#contact">Contact us</a>
-  </div>
-</nav>
+<header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html"><img src="Images/logo_adj.png" alt="Xperbot Logo" class="h-10"></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Home</a>
+                    <a href="aal.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">AAL Education</a>
+                    <a href="rsip.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">RSIP Platform</a>
+                    <a href="services.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Services</a>
+                    <a href="index.html#team" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Team</a>
+                    <a href="careers.html" class="text-xperbot-bright-blue transition duration-300">Careers</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Contact</a>
+                </div>
+                <button id="menuBtn" class="md:hidden text-xperbot-dark-blue" aria-label="Menu" aria-expanded="false">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pt-2 border-t border-gray-200">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">Home</a>
+                <a href="aal.html" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">AAL Education</a>
+                <a href="rsip.html" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">RSIP Platform</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">Services</a>
+                <a href="index.html#team" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">Team</a>
+                <a href="careers.html" class="block py-2 text-xperbot-bright-blue font-medium">Careers</a>
+                <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-<header class="page-hero">
+<header class="page-hero" style="padding-top:150px">
   <div class="wrap" style="max-width:860px">
     <span class="kicker">Careers</span>
     <h1>Build the last mile with us.</h1>
@@ -171,6 +183,14 @@
   </div>
 </footer>
 
+    <script>
+        (function(){
+            var b=document.getElementById('menuBtn'), m=document.getElementById('mobileMenu');
+            if(b&&m){b.addEventListener('click',function(){
+                var open=m.classList.toggle('hidden')===false;
+                b.setAttribute('aria-expanded',open?'true':'false');});}
+        })();
+    </script>
 <script src="assets/xperbot.js"></script>
 </body>
 </html>

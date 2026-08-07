@@ -74,13 +74,22 @@
                     <a href="aal.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">AAL Education</a>
                     <a href="rsip.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">RSIP Platform</a>
                     <a href="services.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Services</a>
-                    <a href="#team" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Team</a>
+                    <a href="index.html#team" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Team</a>
                     <a href="careers.html" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Careers</a>
                     <a href="index.html#contact" class="text-gray-700 hover:text-xperbot-bright-blue transition duration-300">Contact</a>
                 </div>
-                <button class="md:hidden text-xperbot-dark-blue">
+                <button id="menuBtn" class="md:hidden text-xperbot-dark-blue" aria-label="Menu" aria-expanded="false">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pt-2 border-t border-gray-200">
+                <a href="index.html" class="block py-2 text-xperbot-bright-blue font-medium">Home</a>
+                <a href="aal.html" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">AAL Education</a>
+                <a href="rsip.html" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">RSIP Platform</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">Services</a>
+                <a href="index.html#team" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">Team</a>
+                <a href="careers.html" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">Careers</a>
+                <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-xperbot-bright-blue font-medium">Contact</a>
             </div>
         </nav>
     </header>
@@ -113,7 +122,7 @@
     <section id="ecosystem" class="bg-white section-spacing">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-xperbot-dark-blue mb-4">One ecosystem. Three steps.</h2>
+                <h2 class="text-4xl font-bold text-xperbot-dark-blue mb-4">One ecosystem. Three pillars.</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     A robot only creates value when people can command it, choose it wisely, and keep it
                     running. Xperbot covers all three.
@@ -122,7 +131,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- 01 LEARN -->
                 <a href="aal.html" class="block bg-white rounded-xl p-8 shadow-lg card-hover border-t-4" style="border-top-color:#0E7C8C;">
-                    <p class="text-sm font-bold tracking-widest uppercase mb-3" style="color:#0E7C8C;">01 · Learn</p>
+                    <p class="text-sm font-bold tracking-widest uppercase mb-3" style="color:#0E7C8C;">Learn</p>
                     <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-3">AAL — Robotics education</h3>
                     <p class="text-gray-600 mb-6">
                         Our robotics education program in Zurich — hands-on courses on real robots
@@ -132,7 +141,7 @@
                 </a>
                 <!-- 02 DECIDE -->
                 <a href="rsip.html" class="block bg-white rounded-xl p-8 shadow-lg card-hover border-t-4 border-xperbot-bright-blue">
-                    <p class="text-sm font-bold tracking-widest uppercase text-xperbot-bright-blue mb-3">02 · Decide</p>
+                    <p class="text-sm font-bold tracking-widest uppercase text-xperbot-bright-blue mb-3">Decide</p>
                     <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-3">RSIP — Scene interaction platform</h3>
                     <p class="text-gray-600 mb-6">
                         Our intelligent platform for matching real-world needs with the right robot
@@ -142,7 +151,7 @@
                 </a>
                 <!-- 03 DEPLOY -->
                 <a href="services.html" class="block bg-white rounded-xl p-8 shadow-lg card-hover border-t-4" style="border-top-color:#2d3748;">
-                    <p class="text-sm font-bold tracking-widest uppercase text-xperbot-dark-blue mb-3">03 · Deploy</p>
+                    <p class="text-sm font-bold tracking-widest uppercase text-xperbot-dark-blue mb-3">Deploy</p>
                     <h3 class="text-2xl font-bold text-xperbot-dark-blue mb-3">Local delivery &amp; configuration</h3>
                     <p class="text-gray-600 mb-6">
                         Robots delivered, configured and supported in Switzerland — official partner
@@ -338,6 +347,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        (function(){
+            var b=document.getElementById('menuBtn'), m=document.getElementById('mobileMenu');
+            if(b&&m){b.addEventListener('click',function(){
+                var open=m.classList.toggle('hidden')===false;
+                b.setAttribute('aria-expanded',open?'true':'false');});}
+        })();
+    </script>
 
     <!-- Smooth Scrolling Script -->
     <script>
